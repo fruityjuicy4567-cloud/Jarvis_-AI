@@ -43,7 +43,7 @@ async function sendMessage(text) {
   button.disabled = true;
   try {
     // Backend is added in the next build step. Never put API keys in browser code.
-    const response = await fetch("/api/chat", {
+    const response = await fetch("https://jarvis-ai-backend.fruityjuicy4567.workers.dev//api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: clean })
