@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b12">
+  <title>J.A.R.V.I.S.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">J</span><div><strong>J.A.R.V.I.S.</strong><small>PERSONAL AI SYSTEM</small></div></div>
+      <div class="status"><span class="pulse"></span><span id="system-status">SYSTEM ONLINE</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">JUST A RATHER VERY INTELLIGENT SYSTEM</div>
+      <h1>Good to see you.</h1>
+      <p class="sub">Your personal assistant is standing by.</p>
+    </section>
+
+    <section class="core-layout">
+      <div class="core-panel">
+        <div class="panel-heading"><span>NEURAL CORE</span><span class="tiny-dot"></span></div>
+        <div class="core-wrap" aria-label="Animated JARVIS core">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+          <div class="core-center"><div class="core-letter">J</div><span>JARVIS</span></div>
+          <div class="core-scan"></div>
+        </div>
+        <div class="core-caption"><span class="live-dot"></span><span id="core-state">AWAITING INPUT</span></div>
+        <div class="metrics"><div><small>VOICE</small><b id="voice-metric">READY</b></div><div><small>AI LINK</small><b id="ai-metric">NOT CONNECTED</b></div><div><small>MEMORY</small><b>LOCAL</b></div></div>
+      </div>
+
+      <div class="chat-panel">
+        <div class="panel-heading"><span>COMMUNICATION CHANNEL</span><span id="message-count">01 / READY</span></div>
+        <div class="messages" id="messages" aria-live="polite">
+          <div class="message assistant"><span class="message-tag">JARVIS</span><p>Systems initialized. The interface is ready. Connect the AI backend to activate my intelligence.</p></div>
+        </div>
+        <form id="chat-form" class="composer">
+          <label class="sr-only" for="prompt">Message JARVIS</label>
+          <textarea id="prompt" rows="1" placeholder="Speak or type your instruction..." autocomplete="off"></textarea>
+          <button id="mic-button" class="icon-button" type="button" title="Start voice input" aria-label="Start voice input">🎙</button>
+          <button class="send-button" type="submit">SEND <span>↗</span></button>
+        </form>
+        <div class="chat-footer"><span id="mic-status">VOICE INPUT: BROWSER SUPPORT REQUIRED</span><span>ENCRYPTED KEYS: NOT CONFIGURED</span></div>
+      </div>
+    </section>
+
+    <footer><span>J.A.R.V.I.S. // BUILD 001</span><span>PERSONAL ASSISTANT INTERFACE</span><span>ANDROID-READY WEB APP</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
